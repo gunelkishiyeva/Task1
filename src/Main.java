@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class Main {
     public static void main(String[] args) {
 // calling all methods
@@ -8,6 +10,9 @@ public class Main {
         digitComparison(-12);
         checkStudentPoint(15, 3);
         checkLogin("1234567891011", "sw");
+        checkPersonSolderAviability(180, "Male");
+        checkTeacherAvilability(100, 56);
+        carNumber(18);
     }
 
     //if
@@ -64,10 +69,10 @@ public class Main {
         }
     }
 
-
+    //if complex
     public static void checkLogin(String username, String password) {
         if (username.length() > 12) {
-            if (password.length() < 12) {
+            if (password.length() < 10) {
 
                 System.out.println("Login can only be used with at least 12 characters");
             }
@@ -75,5 +80,33 @@ public class Main {
 
     }
 
-    public static void (String password) {}
+    public static void checkPersonSolderAviability(int length, String gender) {
+        if (length > 170) {
+            if (gender == "Male") {
+
+                System.out.println("Avilable Solder");
+            }
+        }
+    }
+
+    public static void checkTeacherAvilability(int monthlyWorkHours, int age) {
+        if (monthlyWorkHours < 170) {
+            if (age < 60) {
+
+                System.out.println("Avilable Teacher");
+            }
+        }
+    }
+
+    public static void carNumber(int carNumber ) {
+
+        if (carNumber> 100) {
+            System.out.println("It is appropriate car number ");
+        } else if (carNumber<10){
+            System.out.println("it is non-appropriate car number ");
+        }
+        else{
+            System.out.println("It is between 10 and 100");
+        }
+    }
 }
