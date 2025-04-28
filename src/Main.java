@@ -5,7 +5,7 @@ public class Main {
        ColorsNumber(6);
        playersSalary(11000);
        genderReveal(true);
-       digitCompariosn(-12);
+       digitComparison(-12);
 
     }
 
@@ -34,7 +34,7 @@ public class Main {
     //if else
     public static void genderReveal (boolean gender) {
 
-        if (gender == true){
+        if (gender){
             System.out.println("Male ");
         }
         else{
@@ -43,7 +43,7 @@ public class Main {
     }
 
     //if else
-    public static void digitCompariosn (int digit) {
+    public static void digitComparison(int digit) {
 
         if (digit >= 0){
             System.out.println("It is positive digit " );
